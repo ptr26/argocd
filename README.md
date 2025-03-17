@@ -11,3 +11,6 @@ minikube service argocd-server --url -n argocd --profile argocd
 
 # deploy app
 kubectl apply -f app.yaml -n argocd
+minikube service argocd-server --url -n argocd --profile argocd
+
+minikube service nginx-guestbook-service --url -n guest-book --profile argocd
