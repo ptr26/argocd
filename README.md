@@ -10,3 +10,4 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 minikube service argocd-server --url -n argocd --profile argocd
 
 # deploy app
+kubectl apply -f app.yaml -n argocd
